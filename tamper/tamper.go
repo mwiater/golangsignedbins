@@ -9,20 +9,18 @@ import (
 )
 
 func main() {
-	// Path to the binary
-
 	// Tamper with the binary
 	f, err := os.OpenFile(common.BinaryToSign, os.O_APPEND|os.O_WRONLY, 0600)
 	if err != nil {
-		fmt.Printf("Failed to open binary for modification: %v", err)
+		common.PrintError(err)
 	}
 	_, err = f.Write([]byte("extra data"))
 	f.Close()
 	if err != nil {
-		fmt.Printf("Failed to modify binary: %v", err)
+		common.PrintError(err)
 	}
 
 	fmt.Println()
-	color.Red("File has been modified: " + common.BinaryToSign)
+	fmt.Printf("%s %s\n", color.HiYellowString("Warning: File has been modified:"), common.BinaryToSign)
 	fmt.Println()
 }
