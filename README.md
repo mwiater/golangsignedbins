@@ -4,6 +4,14 @@ Signing a binary in Go (or any other language) typically involves creating a has
 
 Here's a step-by-step guide and explanation on how to sign a Go binary: [Golang: Verifying Application Integrity by Signing Binaries](https://medium.com/@matt.wiater/golang-verifying-integrity-by-signing-binaries-9b4497d5d761)
 
+## Repository
+
+`git clone git@github.com:mwiater/golangsignedbins.git`
+
+`cd golangsignedbins`
+
+`go mod tidy`
+
 ## Setup Heartbeat Test Application
 
 ### 1. Build the heartbeat binary
