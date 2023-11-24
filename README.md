@@ -1,8 +1,14 @@
 # golangsignedbins
 
+## Motivation
+
+The motivation for this project stems from the crucial need to ensure the integrity and authenticity of binaries in software distribution and deployment. In the realm of Go (Golang) development, the security of executable binaries is paramount, especially when distributing them over networks or deploying them in various environments. This repository provides a high-level solution for signing and verifying Go binaries using RSA digital signatures, a method to confirm that binaries have not been tampered with and are indeed from a trusted source. The codebase covers key aspects such as generating RSA keys, signing binaries with a private key, and verifying those signatures with the corresponding public key. These practices are essential for any developer looking to enhance the security posture of their Go applications, ensuring that the binaries remain secure and trustworthy throughout their lifecycle.
+
+## Process
+
 Signing a binary in Go (or any other language) typically involves creating a hash of the binary file and then encrypting this hash with a private key. The encrypted hash constitutes the digital signature.
 
-Here's a step-by-step guide and explanation on how to sign a Go binary: [Golang: Verifying Application Integrity by Signing Binaries](https://medium.com/@matt.wiater/golang-verifying-integrity-by-signing-binaries-9b4497d5d761)
+Here's a step-by-step guide and companion article on how to sign a Go binary: [Golang: Verifying Application Integrity by Signing Binaries](https://medium.com/@matt.wiater/golang-verifying-integrity-by-signing-binaries-9b4497d5d761)
 
 ## Repository
 
