@@ -2,7 +2,7 @@
 
 Signing a binary in Go (or any other language) typically involves creating a hash of the binary file and then encrypting this hash with a private key. The encrypted hash constitutes the digital signature.
 
-Here's a step-by-step guide and explanation on how to sign a Go binary: [Golang: Verifying Integrity by Signing Binaries](https://medium.com/@matt.wiater/golang-verifying-integrity-by-signing-binaries-9b4497d5d761)
+Here's a step-by-step guide and explanation on how to sign a Go binary: [Golang: Verifying Application Integrity by Signing Binaries](https://medium.com/@matt.wiater/golang-verifying-integrity-by-signing-binaries-9b4497d5d761)
 
 ## Setup Heartbeat Test Application
 
